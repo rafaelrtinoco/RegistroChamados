@@ -7,38 +7,55 @@
       <link rel="stylesheet" href="./estilos/style.css">
       
       <!-- montanto o portifolio -->
-      <title>Portofólio - Home</title>
+      <title>Formulário Chamados</title>
 </head>
 <body>
       <header class="cabecalho">  
             <nav class="cabecalho__menu">
                   <a class="cabecalho__menu__link" href="index.html">Home</a>
-                  <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-                  <a class="cabecalho__menu__link" href="curriculo.html">Curriculo</a>
+                  <!-- <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+                  <a class="cabecalho__menu__link" href="curriculo.html">Curriculo</a> -->
             </nav>
       </header>
       <main class="apresentacao">
             <section class="apresentacao__conteudo">
-                  <h1 class="apresentacao__conteudo__titulo"> Eleve seu negócio digital a outro nível 
-                  <strong class="titulo-destaque"> com um Front-end de qualidade! </strong>
+                  <h1 class="apresentacao__conteudo__titulo"> Formulário para registro de chamados 
+                  <strong class="titulo-destaque"> de Telecom </strong>
                   </h1>
-                  <p class="apresentacao__conteudo__texto">Olá! Sou Joana Santos, desenvolvedora Front-end com especialidade em React, 
-                        HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
-                  <div class="apresentacao__botoes">
-                        <h2 class="apresentacao__conteudo__subtitulo">Acesse minhas redes: </h2>
-                        <a class="apresentacao__botoes__links" href = "https://instagram.com/rafaballerini">
-                              <img src="./imagens/instagram.png" alt="Imagem instagram">
-                              Instagram
-                        </a>
-                        <a class="apresentacao__botoes__links" href = "https://github.com/rafaballerini">
-                              <img src="./imagens/github.png" alt="Imagem github">
-                              Github
-                        </a>
-                        
+                  <p class="apresentacao__conteudo__texto">Formulário destinado á registro de todos os chamados abertos em operadoras e terceiros</p>
+                             
                   </div>
             </section>
-                  <img class="apresentacao__imagem" src= "./imagens/Imagem.png" alt="Foto da Joana">
+            <br>
+            <br>
+            <section class="container">
+                  <h2 class="apresentacao__conteudo__form"">Adicionar novo chamado:</h2>
+                  <form class="form-adiciona">      
+                       
+                              <div class="grupo">
+                                          <label for="nome">Nome:</label>
+                                          <input id="nome" name="nome" type="text" placeholder="digite o nome do seu paciente" class="campo" required>
+                              </div>
+                              <div class="grupo">
+                                          <label for="peso">Peso:</label>
+                                          <input id="peso" name="peso" type="text" placeholder="digite o peso do seu paciente" class="campo campo-medio" required>
+                              </div>
+                              <div class="grupo">
+                                          <label for="altura">Altura:</label>
+                                          <input id="altura" name="altura" type="text" placeholder="digite a altura do seu paciente" class="campo campo-medio" required>
+                              </div>
+                              <div class="grupo">
+                                          <label for="gordura">% de Gordura:</label>
+                                          <input id="gordura" type="text" placeholder="digite a porcentagem de gordura do seu paciente" class="campo campo-medio" required>
+                              </div>
             
+                              <button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
+                  </form>
+            </section>
+
+
+
+                              
       </main>
       <footer class="rodape">
             <p>Desenvolvido por Rafael Ribeiro.</p>
