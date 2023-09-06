@@ -95,8 +95,8 @@ body {
 }
 
 .form-adiciona {
-  display: flex;
-  flex-wrap: space-between;
+  display: flex
+  
   gap: 1rem;
 }
 
@@ -107,8 +107,13 @@ body {
 }
 
 .campo{
-      width: 10rem;
+      width: 20rem;
       height: 1.5rem;
+}
+
+.descricao-problema{
+  width: 20rem;
+  height: 1.5rem;
 }
 
 .apresentacao__conteudo__subtitulo {
@@ -116,10 +121,10 @@ body {
 }
 
 .botao-registrar{
-  align-items: center;
+  
   border: 0.2rem solid var(--cor-terciaria);
   background-color: var(--cor-principal);
-  width: 20%;
+  width: 200px;
   gap: 1rem;
   font-weight: 600;
   border-radius: 0.5rem;
@@ -130,7 +135,8 @@ body {
   font-family: var(--fonte-principal);
 }
 
-.apresentacao__botoes__links:hover {
+
+.botao-registrar:hover {
   background-color: var(--cor-hover: var(--cor-terciaria));
 }
 
