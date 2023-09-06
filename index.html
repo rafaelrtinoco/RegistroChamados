@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="./estilos/style.css">
-      
+
       <!-- montanto o portifolio -->
       <title>Formulário Chamados</title>
 </head>
+
 <body>
-      <header class="cabecalho">  
+      <header class="cabecalho">
             <nav class="cabecalho__menu">
                   <a class="cabecalho__menu__link" href="index.html">Home</a>
                   <!-- <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
@@ -19,52 +21,71 @@
       </header>
       <main class="apresentacao">
             <section class="apresentacao__conteudo">
-                  <h1 class="apresentacao__conteudo__titulo"> Formulário para registro de chamados 
-                  <strong class="titulo-destaque"> de Telecom </strong>
+                  <h1 class="apresentacao__conteudo__titulo"> Formulário para registro de chamados
+                        <strong class="titulo-destaque"> de Telecom </strong>
                   </h1>
-                  <p class="apresentacao__conteudo__texto">Formulário destinado á registro de todos os chamados abertos em operadoras e terceiros</p>
-                             
+                  <p class="apresentacao__conteudo__texto">Formulário destinado á registro de todos os chamados abertos
+                        em operadoras e terceiros</p>
+
                   </div>
             </section>
             <br>
             <br>
             <section class="container">
                   <h2 class="apresentacao__conteudo__form"">Adicionar novo chamado:</h2>
-                  <form class="form-adiciona">      
-                       
-                              <div class="grupo">
-                                          <label for="nome">Sigla Filial:</label>
-                                          <input id="nome" name="nome" type="text" placeholder="  Filial" class="campo campo-medio" required>
-                              </div>
-                              <div class="grupo">
-                                          <label for="peso">Operadora:</label>
-                                          <input id="peso" name="peso" type="text" placeholder="  Nome da operadora" class="campo campo-medio" required>
-                              </div>
-                              <div class="grupo">
-                                          <label for="altura">SLA:</label>
-                                          <input id="altura" name="altura" type="text" placeholder="  Tempo para reparo" class="campo campo-medio" required>
-                              </div>
-                              <div class="grupo">
-                                          <label for="gordura">Descrição: </label>
-                                          <input id="gordura" type="text" placeholder="  Descreva o problema" class="campo campo-medio" required>
-                              </div>                      
-                              
-                              <div>
-                                    <button id="adicionar-chamado" class="botao-registrar">Registrar</button>
-                              </div>
-                                                               
-                              
-                  </form>
+                  <form class=" form-adiciona">
 
-                  
+                        <div class="grupo">
+                              <label for="nome">Sigla Filial:</label>
+                              <input id="nome" name="nome" type="text" placeholder="  Filial" class="campo campo-medio"
+                                    required>
+                        </div>
+                        <div class="grupo">
+                              <label for="peso">Operadora:</label>
+                              <input id="peso" name="peso" type="text" placeholder="  Nome da operadora"
+                                    class="campo campo-medio" required>
+                        </div>
+                        <div class="grupo">
+                              <label for="altura">SLA:</label>
+                              <input id="altura" name="altura" type="text" placeholder="  Tempo para reparo"
+                                    class="campo campo-medio" required>
+                        </div>
+                        <div class="grupo">
+                              <label for="gordura">Descrição: </label>
+                              <input id="gordura" type="text" placeholder="  Descreva o problema"
+                                    class="campo campo-medio" required>
+                        </div>
+
+                        <div>
+                              <button id="adicionar-chamado" class="botao-registrar">Registrar</button>
+                        </div>
+
+
+                        </form>
+                        
             </section>
 
+            
+      <div class="cabecalho-tabela"></div>
+            <table>
+                  <thead>
+                        <tr>                             
+                              <th>Nome</th>
+                              <th>Peso(kg)</th>
+                              <th>Altura(m)</th>
+                              <th>Gordura Corporal(%)</th>
+                              <!-- <th>IMC</th> -->                              
+                        </tr>
+                  </thead>
+                  
+            </table>
+      </div>
+      
 
-
-                              
       </main>
       <footer class="rodape">
             <p>Desenvolvido por Rafael Ribeiro.</p>
       </footer>
 </body>
+
 </html>
