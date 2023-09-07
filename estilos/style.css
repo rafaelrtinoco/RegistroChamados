@@ -130,10 +130,35 @@ label{
   margin: 1.2rem;
 }
 
-.cabecalho-tabela{
+table{
   display: flex;
   justify-content: center;
+  margin: 3rem;
+  
+}
 
+tr{
+  display:flex;
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+}
+
+th{
+  
+  align-items: center;
+  font-family: var(--fonte-principal);
+  color: var(--cor-secundaria);
+  border: 0.2rem solid var(--cor-terciaria);
+  background-color: var(--cor-principal);
+  border: 0.2rem solid var(--cor-terciaria);
+  padding: 10px;
+  border-radius: 0.3rem;
+  gap: 5rem;
+
+  
 }
 
 
@@ -155,9 +180,6 @@ label{
     justify-content: center;
   }
 
-  .apresentacao__imagem {
-    width: auto;
-  }
   .apresentacao {
     flex-direction: column-reverse;
     padding: 15%;
