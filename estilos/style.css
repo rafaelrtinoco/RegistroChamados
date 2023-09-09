@@ -99,8 +99,9 @@ body {
 }
 
 label{
-  width: 90px;
+  width: 150px;
   display:inline-block;
+  
 }
 
 .grupo {
@@ -137,7 +138,7 @@ label{
 
 .th-cabecalho{
   font-family: var(--fonte-principal);
-  width: 220px;
+  width: 150px;
   color: var(--cor-secundaria);
   border: 0.2rem solid var(--cor-terciaria);
   background-color: var(--cor-principal);
@@ -148,7 +149,7 @@ label{
 
 td{
   font-family: var(--fonte-principal);
-  width: 220px;
+  width: 150px;
   color: var(--cor-principal);
   border: 0.2rem solid var(--cor-terciaria);
   background-color:var(--cor-secundaria);
