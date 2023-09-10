@@ -140,7 +140,7 @@ label{
   font-family: var(--fonte-principal);
   width: 150px;
   color: var(--cor-secundaria);
-  border: 0.2rem solid var(--cor-terciaria);
+  border: 0.2rem solid var(--cor-secundaria);
   background-color: var(--cor-principal);
   padding: 5px 10px;
   border-radius: 0.3rem;
@@ -156,6 +156,19 @@ td{
   padding: 5px 10px;
   border-radius: 0.3rem;
   font-weight: 700;
+}
+
+.info-finalizar button {
+  border: 0.2rem solid var(--cor-terciaria);
+  background-color: var(--cor-terciaria);
+  width: 90px;
+  font-weight: 700;
+  border-radius: 0.2rem;
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: var(--cor-secundaria);
+  font-family: var(--fonte-principal);
+   
 }
 
 

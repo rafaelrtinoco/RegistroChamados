@@ -7,7 +7,7 @@ botaoRegistra.addEventListener("click", (event) => {
   let chamado = obtemDadosChamado (form);  
 
   adicionaChamadoNaTabela(chamado);
-  
+
   form.reset();
 })
 
@@ -40,6 +40,7 @@ function montaTr (chamado) {
   chamadoTr.appendChild(criaTd(chamado.sla, "info-sla"));
   chamadoTr.appendChild(criaTd(chamado.descricao, "info-descricao"));
   chamadoTr.appendChild(criaTd(chamado.chamado, "info-chamado"));
+  chamadoTr.appendChild(criaTdFinalizar("info-finalizar"));
 
   return chamadoTr;
 
@@ -51,4 +52,16 @@ function criaTd (dadoChamado, classe) {
   td.classList.add(classe);
 
   return td;
+}
+
+function criaTdFinalizar (classe) {
+  let tdFinalizar = document.createElement("td");
+  let botaoFinalizar = document.createElement("button");
+  botaoFinalizar.classList.add("estiloBtn")
+  botaoFinalizar.textContent = 'Fechar';
+  tdFinalizar.innerHTML = botaoFinalizar.outerHTML;
+  tdFinalizar.classList.add(classe);
+
+  return tdFinalizar;
+
 }
