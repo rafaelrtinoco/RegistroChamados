@@ -1,8 +1,6 @@
 var tabela = document.querySelector("table");
-var btnFinalizar = document.querySelector(".estiloBtn");
 
-btnFinalizar.addEventListener("dblclick", (event) => {
-  console.log("Fui clicado");
-  // event.target.parentNode.removechild(btnFinalizar);  
+tabela.addEventListener("dblclick", (event) => {
+  event.target.parentNode.remove();  
   
 });
