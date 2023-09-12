@@ -1,6 +1,10 @@
-var tabela = document.querySelector("table");
+var tabela = document.querySelector("tbody");
 
-tabela.addEventListener("dblclick", (event) => {
-  event.target.parentNode.remove();  
-  
+tabela.addEventListener("click", (event) => {
+  let pai = event.target.parentNode;
+  let avo = pai.parentNode;
+
+  if (avo.classList.contains("tr-cabecalho")) {
+    avo.remove(event.target.parentNode);
+  }
 });
