@@ -1,0 +1,163 @@
+.tr-cabecalho {
+  display: flex;
+}
+
+.th-cabecalho {
+  font-family: var(--fonte-principal);
+  width: 150px;
+  color: var(--cor-secundaria);
+  border: 0.2rem solid var(--cor-secundaria);
+  background-color: var(--cor-principal);
+  padding: 5px 10px;
+  border-radius: 0.3rem;
+}
+
+.th-sigla {
+  font-family: var(--fonte-principal);
+  width: 60px;
+  color: var(--cor-secundaria);
+  border: 0.2rem solid var(--cor-secundaria);
+  background-color: var(--cor-principal);
+  padding: 5px 10px;
+  border-radius: 0.3rem;
+}
+
+.th-operadora {
+  font-family: var(--fonte-principal);
+  width: 90px;
+  color: var(--cor-secundaria);
+  border: 0.2rem solid var(--cor-secundaria);
+  background-color: var(--cor-principal);
+  padding: 5px 10px;
+  border-radius: 0.3rem;
+}
+
+.th-sla {
+  font-family: var(--fonte-principal);
+  width: 60px;
+  color: var(--cor-secundaria);
+  border: 0.2rem solid var(--cor-secundaria);
+  background-color: var(--cor-principal);
+  padding: 5px 10px;
+  border-radius: 0.3rem;
+}
+
+.th-descricao {
+  font-family: var(--fonte-principal);
+  width: 120px;
+  color: var(--cor-secundaria);
+  border: 0.2rem solid var(--cor-secundaria);
+  background-color: var(--cor-principal);
+  padding: 5px 10px;
+  border-radius: 0.3rem;
+}
+
+.th-chamado {
+  font-family: var(--fonte-principal);
+  width: 130px;
+  color: var(--cor-secundaria);
+  border: 0.2rem solid var(--cor-secundaria);
+  background-color: var(--cor-principal);
+  padding: 5px 10px;
+  border-radius: 0.3rem;
+}
+
+.th-encerrar {
+  font-family: var(--fonte-principal);
+  width: 90px;
+  color: var(--cor-secundaria);
+  border: 0.2rem solid var(--cor-secundaria);
+  background-color: var(--cor-principal);
+  padding: 5px 10px;
+  border-radius: 0.3rem;
+}
+
+.info-sigla {
+  font-family: var(--fonte-principal);
+  width: 60px;
+  color: var(--cor-principal);
+  border: 0.2rem solid var(--cor-terciaria);
+  background-color: var(--cor-secundaria);
+  padding: 5px 10px;
+  border-radius: 0.3rem;
+  font-weight: 700;
+}
+
+.info-operadora {
+  font-family: var(--fonte-principal);
+  width: 90px;
+  color: var(--cor-principal);
+  border: 0.2rem solid var(--cor-terciaria);
+  background-color: var(--cor-secundaria);
+  padding: 5px 10px;
+  border-radius: 0.3rem;
+  font-weight: 700;
+}
+
+.info-sla {
+  font-family: var(--fonte-principal);
+  width: 60px;
+  color: var(--cor-principal);
+  border: 0.2rem solid var(--cor-terciaria);
+  background-color: var(--cor-secundaria);
+  padding: 5px 10px;
+  border-radius: 0.3rem;
+  font-weight: 700;
+}
+
+.info-descricao {
+  font-family: var(--fonte-principal);
+  width: 120px;
+  color: var(--cor-principal);
+  border: 0.2rem solid var(--cor-terciaria);
+  background-color: var(--cor-secundaria);
+  padding: 5px 10px;
+  border-radius: 0.3rem;
+  font-weight: 700;
+}
+
+.info-chamado {
+  font-family: var(--fonte-principal);
+  width: 130px;
+  color: var(--cor-principal);
+  border: 0.2rem solid var(--cor-terciaria);
+  background-color: var(--cor-secundaria);
+  padding: 5px 10px;
+  border-radius: 0.3rem;
+  font-weight: 700;
+}
+
+.info-finalizar {
+  font-family: var(--fonte-principal);
+  width: 90px;
+  color: var(--cor-principal);
+  border: 0.2rem solid var(--cor-terciaria);
+  background-color: var(--cor-secundaria);
+  padding: 5px 10px;
+  border-radius: 0.3rem;
+  font-weight: 700;
+}
+
+.info-finalizar button {
+  border: 0.2rem solid var(--cor-terciaria);
+  background-color: var(--cor-terciaria);
+  width: 70px;
+  font-weight: 700;
+  border-radius: 0.2rem;
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: var(--cor-secundaria);
+  font-family: var(--fonte-principal);
+}
+
+.info-finalizar button:hover {
+  border: 0.2rem solid var(--cor-principal);
+  background-color: var(--cor-terciaria);
+  width: 70px;
+  font-weight: 900;
+  border-radius: 0.2rem;
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: var(--cor-secundaria);
+  font-family: var(--fonte-principal);
+}
