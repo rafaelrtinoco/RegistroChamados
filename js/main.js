@@ -4,11 +4,20 @@ botaoRegistra.addEventListener("click", (event) => {
 
   let form = document.querySelector(".form-adiciona");
 
-  let chamado = obtemDadosChamado (form);  
+  let chamado = obtemDadosChamado (form);    
+
+  let erros = validaCampos(chamado);
+
+  if(erros.length > 0) {
+    exibeMensagemErro(erros);
+    return;
+  }
 
   adicionaChamadoNaTabela(chamado);
 
   form.reset();
+  var limpaErro = document.querySelector(".mensagem");
+  limpaErro.innerHTML = "";  
 })
 
 function adicionaChamadoNaTabela (chamado) {
@@ -17,6 +26,15 @@ function adicionaChamadoNaTabela (chamado) {
   tabela.appendChild(chamadoTr);
 }
 
+function exibeMensagemErro(erros) {
+  let ul = document.querySelector(".mensagem");
+  ul.innerHTML = ""; // quando realizar novo teste vai zerar a ul.
+  erros.forEach(recebeErro => {
+    let li = document.createElement("li")
+    li.textContent = recebeErro;
+    ul.appendChild(li);
+  })
+}
 
 function obtemDadosChamado(form) {
 
@@ -63,5 +81,18 @@ function criaTdFinalizar (classe) {
   tdFinalizar.classList.add(classe);
 
   return tdFinalizar;
+
+}
+
+function validaCampos(chamado) {
+  let erros = [] ;
+  
+  if(chamado.siglaFilial.length == 0) erros.push("Campo Filial em branco!");
+  if(chamado.operadora.length == 0) erros.push("Campo Operadora em branco!");
+  if(chamado.sla.length == 0) erros.push("Campo SLA em branco!");
+  if(chamado.descricao.length == 0) erros.push("Campo Descrição em branco!");
+  if(chamado.chamado.length == 0) erros.push("Campo Chamado em branco!");  
+
+  return erros;
 
 }
