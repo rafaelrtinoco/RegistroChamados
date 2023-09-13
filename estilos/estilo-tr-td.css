@@ -32,6 +32,16 @@
   border-radius: 0.3rem;
 }
 
+.th-solicitante {
+  font-family: var(--fonte-principal);
+  width: 90px;
+  color: var(--cor-secundaria);
+  border: 0.1rem solid var(--cor-secundaria);
+  background-color: var(--cor-principal);
+  padding: 5px 10px;
+  border-radius: 0.3rem;
+}
+
 .th-sla {
   font-family: var(--fonte-principal);
   width: 60px;
@@ -42,9 +52,19 @@
   border-radius: 0.3rem;
 }
 
-.th-descricao {
+.th-abertura {
   font-family: var(--fonte-principal);
   width: 120px;
+  color: var(--cor-secundaria);
+  border: 0.1rem solid var(--cor-secundaria);
+  background-color: var(--cor-principal);
+  padding: 5px 10px;
+  border-radius: 0.3rem;
+}
+
+.th-descricao {
+  font-family: var(--fonte-principal);
+  width: 200px;
   color: var(--cor-secundaria);
   border: 0.1rem solid var(--cor-secundaria);
   background-color: var(--cor-principal);
@@ -92,6 +112,19 @@
   padding: 5px 10px;
   border-radius: 0.3rem;
   font-weight: 700;
+  
+}
+
+.info-solicitante {
+  font-family: var(--fonte-principal);
+  width: 90px;
+  color: var(--cor-principal);
+  border: 0.1rem solid var(--cor-principal);
+  background-color: var(--cor-secundaria);
+  padding: 5px 10px;
+  border-radius: 0.3rem;
+  font-weight: 700;
+  
 }
 
 .info-sla {
@@ -105,7 +138,7 @@
   font-weight: 700;
 }
 
-.info-descricao {
+.info-abertura {
   font-family: var(--fonte-principal);
   width: 120px;
   color: var(--cor-principal);
@@ -114,6 +147,19 @@
   padding: 5px 10px;
   border-radius: 0.3rem;
   font-weight: 700;
+  font-size: 14px;
+}
+
+.info-descricao {
+  font-family: var(--fonte-principal);
+  width: 200px;
+  color: var(--cor-principal);
+  border: 0.1rem solid var(--cor-principal);
+  background-color: var(--cor-secundaria);
+  padding: 5px 10px;
+  border-radius: 0.3rem;
+  font-weight: 700;
+  font-size: 13px;
 }
 
 .info-chamado {
@@ -125,6 +171,7 @@
   padding: 5px 10px;
   border-radius: 0.3rem;
   font-weight: 700;
+  font-size: 14px;
 }
 
 .info-finalizar {

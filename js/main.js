@@ -18,6 +18,10 @@ botaoRegistra.addEventListener("click", (event) => {
   form.reset();
   var limpaErro = document.querySelector(".mensagem");
   limpaErro.innerHTML = "";  
+
+  let date = new Date().toLocaleString();
+  
+  
 })
 
 function adicionaChamadoNaTabela (chamado) {
@@ -41,7 +45,9 @@ function obtemDadosChamado(form) {
   let chamado ={
     siglaFilial: form.sigla.value,
     operadora: form.operadora.value,
+    solicitante: form.solicitante.value,
     sla: form.sla.value,
+    dataAbertura: new Date().toLocaleString(),
     descricao: form.descricao.value,
     chamado: form.chamado.value
   }
@@ -55,7 +61,9 @@ function montaTr (chamado) {
 
   chamadoTr.appendChild(criaTd(chamado.siglaFilial, "info-sigla")); 
   chamadoTr.appendChild(criaTd(chamado.operadora, "info-operadora"));
+  chamadoTr.appendChild(criaTd(chamado.solicitante, "info-solicitante"));
   chamadoTr.appendChild(criaTd(chamado.sla, "info-sla"));
+  chamadoTr.appendChild(criaTd(chamado.dataAbertura, "info-abertura"));
   chamadoTr.appendChild(criaTd(chamado.descricao, "info-descricao"));
   chamadoTr.appendChild(criaTd(chamado.chamado, "info-chamado"));
   chamadoTr.appendChild(criaTdFinalizar("info-finalizar"));
@@ -87,11 +95,11 @@ function criaTdFinalizar (classe) {
 function validaCampos(chamado) {
   let erros = [] ;
   
-  if(chamado.siglaFilial.length == 0) erros.push("Campo Filial em branco!");
-  if(chamado.operadora.length == 0) erros.push("Campo Operadora em branco!");
-  if(chamado.sla.length == 0) erros.push("Campo SLA em branco!");
-  if(chamado.descricao.length == 0) erros.push("Campo Descrição em branco!");
-  if(chamado.chamado.length == 0) erros.push("Campo Chamado em branco!");  
+  if(chamado.siglaFilial.length == 0) erros.push("Campo Filial deve ser preenchido.");
+  if(chamado.operadora.length == 0) erros.push("Campo Operadora deve ser preenchido.");
+  if(chamado.sla.length == 0) erros.push("Campo SLA deve ser preenchido.");
+  if(chamado.descricao.length == 0) erros.push("Campo Descrição deve ser preenchido.");
+  if(chamado.chamado.length == 0) erros.push("Campo Chamado deve ser preenchido.");  
 
   return erros;
 

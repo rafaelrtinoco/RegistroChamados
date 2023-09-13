@@ -37,7 +37,8 @@
                   <form class=" form-adiciona">
 
                         <ul class="mensagem"></ul>
-
+                        
+                        
                         <div class="grupo">
                               <label for="sigla">Sigla Filial:</label>
                               <input id="sigla" name="sigla" type="text" placeholder="  Filial"
@@ -49,8 +50,13 @@
                                     class="campo campo-medio" required>
                         </div>
                         <div class="grupo">
+                              <label for="solicitante">Solicitante:</label>
+                              <input id="solicitante" name="solicitante" type="text" placeholder="  Nome de quem abriu o chamado"
+                                    class="campo campo-medio" required>
+                        </div>
+                        <div class="grupo">
                               <label for="sla">SLA:</label>
-                              <input id="sla" name="sla" type="text" placeholder="  Tempo para reparo"
+                              <input id="sla" name="sla" type="time" placeholder="  Tempo para reparo"
                                     class="campo campo-medio" required>
                         </div>
                         <div class="grupo">
@@ -81,7 +87,9 @@
                         <tr class=" tr-cabecalho">
                         <th class="th-sigla">Filial</th>
                         <th class="th-operadora">Operadora</th>
+                        <th class="th-solicitante">Solicitante</th>
                         <th class="th-sla">SLA</th>
+                        <th class="th-abertura">Aberto em</th>
                         <th class="th-descricao">Descrição</th>
                         <th class="th-chamado">Nº do chamado</th>
                         <th class="th-encerrar">Encerrar</th>
